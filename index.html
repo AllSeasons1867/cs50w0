@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            * {
+                /* border: blue solid 1px; */
+            }
+            .search {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .search-box {
+                width: 100%;
+                border-radius: 10%;
+            }
+            form {
+            width: 100%;
+            text-align: center; 
+            }
+            form img {
+                margin: auto; 
+                display: block; 
+            }
+            nav > a {
+                padding: 10px;
+            }
+            .container {
+
+            }
+        </style>
+    </head>
+    <body>
+        <nav style="text-align: right;">
+            <a href="./image.html">Image</a>
+            <a href="./advanced.html">Advanced</a>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-2 col-sm-1">
+                </div>
+                <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12 search">
+                    <form action="https://google.com/search">
+                        <img src="https://www.google.ca/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+                        <br>
+                        <input class="search-box" type="text" name="q">
+                        <br>
+                        <br>
+                        <input type="submit" value="Google Search">
+                        <input type="submit" name="btnI" value="I'm Feeling Lucky">
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-2 col-sm-1">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
