@@ -7,6 +7,7 @@
             * {
                 /* border: blue solid 1px; */
             }
+
             /* .search {
                 display: flex;
                 justify-content: center;
@@ -24,13 +25,12 @@
             form img {
                 margin: auto; 
                 display: block; 
-            }
+            }*/
+            
             nav > a {
                 padding: 10px;
             }
-            .container {
-                
-            } */
+
             .row {
                 margin: 5px;
             }
@@ -47,16 +47,16 @@
             <form class="container" action="https://google.com/search">
                 <h4><span>Find pages with...</span><span style="float: right; font-size: smaller; color: rgb(102, 97, 97)">To do this in the search box</span></h4>
                 <div class="row">
-                    <span class="col-2">all these words:</span><input class="col-7" type="text"><span class="col-3" style="font-size: smaller;">Type the important words: tricolor rat terrier</span>
+                    <span class="col-2">all these words:</span><input name="as_q" class="col-7" type="text"><span class="col-3" style="font-size: smaller;">Type the important words: tricolor rat terrier</span>
                 </div>
                 <div class="row">
-                    <span class="col-2">this exact word or phrase:</span><input class="col-7" type="text"><span class="col-3" style="font-size: smaller;">Put exact words in quotes: "rat terrier"</span>
+                    <span class="col-2">this exact word or phrase:</span><input name="as_epq" class="col-7" type="text"><span class="col-3" style="font-size: smaller;">Put exact words in quotes: "rat terrier"</span>
                 </div>
                 <div class="row">
-                    <span class="col-2">any of these words:</span><input class="col-7" type="text"><span class="col-3" style="font-size: smaller;">Type OR between all the words you want:  miniature OR standard</span>
+                    <span class="col-2">any of these words:</span><input name="as_oq" class="col-7" type="text"><span class="col-3" style="font-size: smaller;">Type OR between all the words you want:  miniature OR standard</span>
                 </div>
                 <div class="row">
-                    <span class="col-2">none of these words:</span><input class="col-7" type="text"><span class="col-3" style="font-size: smaller;">Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</span>
+                    <span class="col-2">none of these words:</span><input name="as_eq" class="col-7" type="text"><span class="col-3" style="font-size: smaller;">Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</span>
                 </div>
                 <!-- <div class="row">
                     <span class="col-2">numbers ranging from:</span><input class="col-3" type="text"><span class="col-1">to</span><input class="col-3" type="text"><span class="col-3" style="font-size: smaller;">Put 2 periods between the numbers and add a unit of measure: 10..35 lb, $300..$500, 2010..2011</span>
