@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Google Advanced Search</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            * {
+                /* border: blue solid 1px; */
+            }
+            /* .search {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .search-box {
+                width: 100%;
+                border-radius: 10%;
+            }
+            form {
+            width: 100%;
+            text-align: center; 
+            }
+            form img {
+                margin: auto; 
+                display: block; 
+            }
+            nav > a {
+                padding: 10px;
+            }
+            .container {
+                
+            } */
+            .row {
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav style="text-align: right;">
+            <a href="./index.html">Search</a>
+            <a href="./image.html">Image</a>
+        </nav>
+        <div class="container">
+            <h3 style="color: rgb(218, 42, 42);">Advanced Search</h1>
+            <hr>
+            <form class="container" action="https://google.com/search">
+                <h4><span>Find pages with...</span><span style="float: right; font-size: smaller; color: rgb(102, 97, 97)">To do this in the search box</span></h4>
+                <div class="row">
+                    <span class="col-2">all these words:</span><input class="col-7" type="text"><span class="col-3" style="font-size: smaller;">Type the important words: tricolor rat terrier</span>
+                </div>
+                <div class="row">
+                    <span class="col-2">this exact word or phrase:</span><input class="col-7" type="text"><span class="col-3" style="font-size: smaller;">Put exact words in quotes: "rat terrier"</span>
+                </div>
+                <div class="row">
+                    <span class="col-2">any of these words:</span><input class="col-7" type="text"><span class="col-3" style="font-size: smaller;">Type OR between all the words you want:  miniature OR standard</span>
+                </div>
+                <div class="row">
+                    <span class="col-2">none of these words:</span><input class="col-7" type="text"><span class="col-3" style="font-size: smaller;">Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</span>
+                </div>
+                <!-- <div class="row">
+                    <span class="col-2">numbers ranging from:</span><input class="col-3" type="text"><span class="col-1">to</span><input class="col-3" type="text"><span class="col-3" style="font-size: smaller;">Put 2 periods between the numbers and add a unit of measure: 10..35 lb, $300..$500, 2010..2011</span>
+                </div> -->
+                <div class="row">
+                    <span class="col-2"></span><span class="col-7" style="padding-right: 0px;"><input type="submit" value="Advanced Search" style="background-color: rgb(134, 160, 238); float: right;"></span><span class="col-3"></span>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
